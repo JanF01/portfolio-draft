@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <StartPage class="start"></StartPage>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import StartPage from "./main/StartPage.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
-  }
+    StartPage,
+  },
 };
 </script>
 
 <style>
+@import "./mixins/mixins.scss";
+body {
+  margin: 0 auto;
+  overflow-y: hidden;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  font-family: "Abel", sans-serif;
+}
+.start {
+  width: 100%;
+  height: 100%;
 }
 </style>

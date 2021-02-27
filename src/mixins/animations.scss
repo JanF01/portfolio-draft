@@ -1,0 +1,33 @@
+@keyframes bck {
+  0% {
+    background: $dark_blue;
+  }
+  50% {
+    background: $v_dark_blue;
+  }
+  0% {
+    background: $dark_blue;
+  }
+}
+@keyframes randomMovement {
+  0% {
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  25% {
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  50% {
+    margin: -3%;
+    margin-top: 5%;
+  }
+  75% {
+    margin-left: -2%;
+    margin-top: 5%;
+  }
+  100% {
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+}
