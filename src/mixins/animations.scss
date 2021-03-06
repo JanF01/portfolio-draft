@@ -5,7 +5,7 @@
   50% {
     background: $v_dark_blue;
   }
-  0% {
+  100% {
     background: $dark_blue;
   }
 }
@@ -29,5 +29,27 @@
   100% {
     margin-left: 0%;
     margin-top: 0%;
+  }
+}
+@keyframes opacityChange {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityChangeOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

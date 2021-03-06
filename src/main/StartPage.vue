@@ -1,25 +1,29 @@
 <template>
   <div id="start">
     <main>
-      Jan Fiołka - Design And Development
+      <span> Jan Fiołka - Design And Development </span>
       <StickyNote type="1" class="Sticky-1" draggable="false"></StickyNote>
       <StickyNote type="2" class="Sticky-2" draggable="false"></StickyNote>
-      <img class="backwater" src="../assets/backwater.jpg" />
-      <img class="waterball" src="../assets/waterball.png" />
     </main>
+    <RightMenu></RightMenu>
     <LeftMenu></LeftMenu>
+    <DecorationBlock></DecorationBlock>
   </div>
 </template>
 
 <script>
 import StickyNote from "./StickyNote";
-import LeftMenu from "./LeftMenu.vue";
+import RightMenu from "./RightMenu";
+import LeftMenu from "./LeftMenu";
+import DecorationBlock from "./DecorationBlock";
 export default {
   name: "StartPage",
 
   methods: {},
   components: {
     StickyNote,
+    RightMenu,
+    DecorationBlock,
     LeftMenu,
   },
 };
@@ -34,6 +38,7 @@ export default {
   background: $dark_blue;
 }
 main {
+  user-select: none;
   background: radial-gradient($dark_blue 30%, transparent);
   min-width: 100%;
   height: 100%;
@@ -62,23 +67,6 @@ main {
     top: 11%;
     left: 18%;
     z-index: 1;
-  }
-  .backwater {
-    opacity: 0.05;
-    position: absolute;
-    width: 100%;
-
-    bottom: -5em;
-  }
-  .waterball {
-    width: 2em;
-    position: absolute;
-    bottom: -0.1em;
-    &:nth-child(4) {
-      left: 4.3em;
-      transform: rotate(0deg);
-      bottom: 12.3rem;
-    }
   }
 }
 </style>
